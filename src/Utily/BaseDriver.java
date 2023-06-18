@@ -31,6 +31,9 @@ public class BaseDriver {
     @AfterClass
     void  bitisIslemleri()
     {
+        System.out.println("Bitiş İşlemleri");
+        MyFunc.Wait(5);
+        driver.quit();
 
     }
 }
