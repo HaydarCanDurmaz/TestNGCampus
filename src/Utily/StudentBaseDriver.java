@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -15,7 +14,7 @@ import java.time.Duration;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class BaseDriver2 {
+public class StudentBaseDriver {
     public static WebDriver driver;
     public static WebDriverWait wait;
 
@@ -42,10 +41,10 @@ public class BaseDriver2 {
 
         driver.get("https://test.mersys.io/");
         WebElement username = driver.findElement(By.id("mat-input-0"));
-        username.sendKeys("turkeyts");
+        username.sendKeys("S5_11C");
 
         WebElement Password = driver.findElement(By.id("mat-input-1"));
-        Password.sendKeys("TechnoStudy123");
+        Password.sendKeys("12345");
 
         WebElement Login = driver.findElement(By.cssSelector("button[aria-label='LOGIN']"));
         Login.click();
