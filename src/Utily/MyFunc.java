@@ -1,7 +1,7 @@
 package Utily;
 
 public class MyFunc {
-    public static void Wait(int sn)
+    public static void Bekle(int sn)
     {
         try {
             Thread.sleep(1000*sn);

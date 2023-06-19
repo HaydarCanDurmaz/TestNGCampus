@@ -1,10 +1,13 @@
 package TESTCAMPUS;
 
+import Utily.AdminBaseDriver;
 import org.testng.annotations.Test;
 
-public class AdminLogin {
+public class AdminLogin extends AdminBaseDriver {
     @Test
-    public void AdminLogin(){
+    void loginTest() {
+        System.out.println("Login Test");
+
 
     }
 }
